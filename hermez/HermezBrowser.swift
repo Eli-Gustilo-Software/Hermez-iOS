@@ -1,6 +1,8 @@
 //
-//  ZeroConfigBrowser.swift
-//  zeroconfig_test
+//  HermezBrowser.swift
+//
+//  MIT license see,
+//  https://github.com/Eli-Gustilo-Software/Hermez-iOS/blob/development/LICENSE
 //
 //  Created by Nicholas Gustilo on 3/3/21.
 //
@@ -17,6 +19,7 @@ struct HermezBrowserService {
 protocol HermezBrowserDataAvailable {
     func availableDevices(devices: [HermezDevice])
     func messageCannotBeSentToDevices(messages: [HermezMessage], error: HermezError) // TODO: never called??
+    func resolveError(serviceType: String, deviceName: String, error: HermezError)
 }
 
 class HermezBrowser: NSObject {
@@ -37,15 +40,15 @@ class HermezBrowser: NSObject {
     
     func startBrowsing(serviceType: String) {
         self.services.removeAll()
+        self.devices.removeAll()
         self.serviceBrowser.delegate = self
         DispatchQueue.global(qos: .background).async {
-            self.serviceBrowser.searchForServices(ofType: "_blah._tcp.", inDomain: self.HERMES_DOMAIN)
+            self.serviceBrowser.searchForServices(ofType: serviceType, inDomain: self.HERMES_DOMAIN)
             self.isSearching = true
         }
     }
     
     func findAvailableDevices(serviceType: String) {
-        // TODO: query for devices
         if !isSearching {
             self.startBrowsing(serviceType: serviceType)
         }
@@ -71,7 +74,8 @@ class HermezBrowser: NSObject {
         print("Net service browser stopped browsing.")
         serviceBrowser.stop()
         serviceBrowser.delegate = nil
-        self.serviceBrowser = NetServiceBrowser()
+        self.devices.removeAll()
+        self.services.removeAll() // will this close all sockets???
         isSearching = false
     }
     
@@ -111,21 +115,40 @@ class HermezBrowser: NSObject {
         return nil
     }
     
-    private func updateService(updatedService: HermezBrowserService) {
+    private func addService(addService: HermezBrowserService) {
         var index = 0
         for currentService in services {
-            if currentService.netService == updatedService.netService {
+            if currentService.netService == addService.netService {
                 services.remove(at: index)
             }
             index += 1
         }
-        services.append(updatedService)
+        services.append(addService)
     }
     
-    private func addService(service: HermezBrowserService) {
-        self.services.append(service)
-        
-
+    private func removeService(socket: GCDAsyncSocket) {
+        var index = 0
+        var deviceToRemove: HermezDevice?
+        for currentService in self.services {
+            if currentService.joinSocket == socket {
+                self.services.remove(at: index)
+                deviceToRemove = currentService.device
+                break
+            }
+            index += 1
+        }
+        index = 0
+        if let removeMe = deviceToRemove {
+            for device in self.devices {
+                if device == removeMe {
+                    self.devices.remove(at: index)
+                    DispatchQueue.main.async {
+                        self.dataDelegate?.availableDevices(devices: self.devices)
+                    }
+                    break
+                }
+            }
+        }
     }
 }
 
@@ -163,7 +186,6 @@ extension HermezBrowser: NetServiceBrowserDelegate {
 
 //MARK: - NetService Delegate
 extension HermezBrowser: NetServiceDelegate {
-    
     func netServiceDidResolveAddress(_ sender: NetService) {
         if connect(with: sender) {
          } else {
@@ -183,6 +205,7 @@ extension HermezBrowser: NetServiceDelegate {
     
     func netService(_ sender: NetService, didNotResolve errorDict: [String : NSNumber]) {
         print("NetService : \(sender) failed to resolve with info: \(errorDict).")
+        self.dataDelegate?.resolveError(serviceType: sender.type, deviceName: sender.name, error: .RESOLVE_ERROR)
     }
     
     func connect(with service: NetService?) -> Bool {
@@ -194,9 +217,9 @@ extension HermezBrowser: NetServiceDelegate {
             if !zcBrowserService.joinSocket.isConnected {
                 // Initialize Socket
                 zcBrowserService.joinSocket = GCDAsyncSocket(delegate: self, delegateQueue: .main)
-                self.updateService(updatedService: zcBrowserService)
+                self.addService(addService: zcBrowserService)
                 // Connect
-                while !isConnected && addresses?.count != nil {
+                while !isConnected, let validAddresses = addresses, validAddresses.count > 0 {
                     let address = addresses?[0]
                     if address != nil {
                         if let _ = try? zcBrowserService.joinSocket.connect(toAddress: address!) {
@@ -224,7 +247,7 @@ extension HermezBrowser: GCDAsyncSocketDelegate {
     func socket(_ sock: GCDAsyncSocket, didConnectToHost host: String, port: UInt16) {
         print("Socket Did Connect to Host: \(host), Port: \(port)", sock)
         if let zcBrowserService = findZCBrowserServiceBySocket(socket: sock), let myDevice = self.device {
-            let message = HermezMessage(message: "ZeroConfigBrowser did connect to service \(myDevice.name)!!!\r\n", jsonData: nil, messageID: "\(myDevice.name)", receivingDevice: zcBrowserService.device, sendingDevice: myDevice)
+            let message = HermezMessage(message: "HermezBrowser did connect to service \(zcBrowserService.device.name)!!!\r\n", jsonData: nil, messageID: "\(myDevice.name)", receivingDevice: zcBrowserService.device, sendingDevice: myDevice)
             if let messageAsJsonData = try? JSONEncoder().encode(message) {
                 let messageAsJsonString = String(data: messageAsJsonData, encoding: .utf8)!
                 sendValue(str: messageAsJsonString, zcBrowserService: zcBrowserService)
@@ -247,6 +270,7 @@ extension HermezBrowser: GCDAsyncSocketDelegate {
         } else {
             print("socketDidDisconnect with sock: \(sock)", sock)
         }
+        removeService(socket: sock)
     }
     
     func socket(_ sock: GCDAsyncSocket, didRead data: Data, withTag tag: Int) {

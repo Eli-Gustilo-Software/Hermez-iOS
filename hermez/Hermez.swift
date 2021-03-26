@@ -1,17 +1,19 @@
 //
-//  ZeroConfig.swift
-//  zeroconfig_test
+//  Hermez.swift
+//
+//  MIT license see,
+//  https://github.com/Eli-Gustilo-Software/Hermez-iOS/blob/development/LICENSE
 //
 //  Created by Nicholas Gustilo on 3/6/21.
 //
 
 import Foundation
-import RxSwift
 
 public enum HermezError: Error {
     case SERVICE_FAILED
     case DEVICE_NOT_FOUND
     case JSON_PARSE_ERROR
+    case RESOLVE_ERROR
 }
 
 public struct HermezDevice: Codable, Equatable {
@@ -27,7 +29,7 @@ public struct HermezMessage: Codable, Equatable {
     public var sendingDevice: HermezDevice
 }
 
-public protocol HermezDataAvailable : class {
+public protocol HermezDataProtocol : class {
     func availableDevices(devices: [HermezDevice])
     func messageReceived(message: HermezMessage)
     
@@ -36,9 +38,10 @@ public protocol HermezDataAvailable : class {
     func serviceStopped(serviceType: String, serviceName: String)
     func serviceFailed(serviceType: String, serviceName: String, error: HermezError)
     func messageCannotBeSentToDevices(messages: [HermezMessage], error: HermezError)
+    func resolveError(serviceType: String, serviceName: String, error: HermezError)
 }
 
-public extension HermezDataAvailable { //defaults
+public extension HermezDataProtocol { //defaults
     func serviceStarted(serviceType: String, serviceName: String) {
         print("serviceStarted type: \(serviceType), name: \(serviceName)")
     }
@@ -54,6 +57,10 @@ public extension HermezDataAvailable { //defaults
     func messageCannotBeSentToDevices(messages: [HermezMessage], error: HermezError) {
         print("messageCannotBeSentToDevices messages: \(messages), error: \(error)")
     }
+    
+    func resolveError(serviceType: String, serviceName: String, error: HermezError) {
+        print("resolveError type: \(serviceType), name: \(serviceName), error: \(error)")
+    }
 }
 
 func print(_ items: Any...) {
@@ -68,7 +75,7 @@ public class Hermez: NSObject {
     
     private var serviceName: String = "unknown"
     private var deviceName: String?
-    private var delegates: [HermezDataAvailable] = []
+    private var delegates: [HermezDataProtocol] = []
     
     private override init() {
         super.init()
@@ -93,11 +100,11 @@ public class Hermez: NSObject {
         return true
     }
 
-    public func addDataDelegate(delegate: HermezDataAvailable) {
+    public func addDataDelegate(delegate: HermezDataProtocol) {
         self.delegates.append(delegate)
     }
     
-    public func removeDataDelegate(delegate: HermezDataAvailable) {
+    public func removeDataDelegate(delegate: HermezDataProtocol) {
         self.delegates = self.delegates.filter { $0 !== delegate }
     }
     
@@ -131,6 +138,7 @@ public class Hermez: NSObject {
     public func stopService() {
         if HermezService.shared.serviceIsActive {
             HermezService.shared.stopService()
+            HermezBrowser.shared.stopBrowsing()
         }
     }
     
@@ -168,6 +176,12 @@ extension Hermez: HermezServiceDataAvailable {
 }
 
 extension Hermez: HermezBrowserDataAvailable {
+    func resolveError(serviceType: String, deviceName: String, error: HermezError) {
+        for delegate in delegates {
+            delegate.resolveError(serviceType: serviceType, serviceName: serviceName, error: error)
+        }
+    }
+    
     func availableDevices(devices: [HermezDevice]) {
         for delegate in delegates {
             delegate.availableDevices(devices: devices)

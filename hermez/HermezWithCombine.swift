@@ -1,6 +1,8 @@
 //
-//  ZeroConfigWithCombine.swift
-//  zeroconfig_test
+//  HermezWithCombine.swift
+//
+//  MIT license see,
+//  https://github.com/Eli-Gustilo-Software/Hermez-iOS/blob/development/LICENSE
 //
 //  Created by Nicholas Gustilo on 3/16/21.
 //
@@ -19,7 +21,7 @@ public class HermezWithCombine: NSObject {
     private override init() {
         super.init()
         Hermez.shared.addDataDelegate(delegate: self)
-        Hermez.shared.findAvailableDevices()
+        //Hermez.shared.findAvailableDevices()
     }
     
     public func setServiceAndDeviceName(serviceName: String, deviceName: String, deviceJson: String?) -> Bool {
@@ -40,7 +42,7 @@ public class HermezWithCombine: NSObject {
 }
 
 @available(iOS 13.0, *)
-extension HermezWithCombine: HermezDataAvailable {
+extension HermezWithCombine: HermezDataProtocol {
     public func availableDevices(devices: [HermezDevice]) {
         self.devicesObservable.send(devices)
     }

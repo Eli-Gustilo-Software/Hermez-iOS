@@ -1,6 +1,8 @@
 //
 //  HermesWithRx.swift
-//  zeroconfig_test
+//
+//  MIT license see,
+//  https://github.com/Eli-Gustilo-Software/Hermez-iOS/blob/development/LICENSE
 //
 //  Created by Nicholas Gustilo on 3/17/21.
 //
@@ -10,7 +12,7 @@ import RxSwift
 
 //TODO: handle errors
 public class HermezWithRx: NSObject {
-    static let shared = HermezWithRx()
+    public static let shared = HermezWithRx()
     
     public var devicesObservable = BehaviorSubject(value: [HermezDevice]())
     public var messagesObservable = PublishSubject<HermezMessage>()
@@ -18,7 +20,6 @@ public class HermezWithRx: NSObject {
     private override init() {
         super.init()
         Hermez.shared.addDataDelegate(delegate: self)
-        Hermez.shared.findAvailableDevices()
     }
     
     public func setServiceAndDeviceName(serviceName: String, deviceName: String, deviceJson: String?) -> Bool {
@@ -38,7 +39,7 @@ public class HermezWithRx: NSObject {
     }
 }
 
-extension HermezWithRx: HermezDataAvailable {
+extension HermezWithRx: HermezDataProtocol {
     public func availableDevices(devices: [HermezDevice]) {
         self.devicesObservable.onNext(devices)
     }

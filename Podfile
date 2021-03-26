@@ -11,8 +11,50 @@ target 'hermez' do
 
   target 'hermezTests' do
     inherit! :search_paths
+    pod 'CocoaAsyncSocket'
+    pod 'RxSwift'
+    pod 'RxCocoa'
     pod 'RxBlocking'
     pod 'RxTest'
   end
-
+  
+  target 'hermez_mac' do
+    platform :osx, '10.15'
+    use_frameworks!
+    pod 'CocoaAsyncSocket'
+  end
+  
+  target 'hermez_macTests' do
+    platform :osx, '10.15'
+    pod 'CocoaAsyncSocket'
+    pod 'RxBlocking'
+    pod 'RxTest'
+  end
+  
+  target 'HermezTesterCombine' do
+    use_frameworks!
+    pod 'CocoaAsyncSocket'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+  end
+  
+  target 'HermezTesterMac' do
+    platform :osx, '10.15'
+    use_frameworks!
+    pod 'CocoaAsyncSocket'
+  end
+  
+  target 'HermezTesterDelegate' do
+    use_frameworks!
+    pod 'CocoaAsyncSocket'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+  end
+  
+  target 'HermezTesterRx' do
+    use_frameworks!
+    pod 'CocoaAsyncSocket'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+  end
 end

@@ -3,60 +3,244 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6087E4513095C9CEE721ADBB /* Pods_hermez_mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC845794A7CFCF9475125FC /* Pods_hermez_mac.framework */; };
 		7D97E8109D370E80D77B6A88 /* Pods_hermez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A5CF3A19C6796902225E4B /* Pods_hermez.framework */; };
-		B197ECF52602C87600809C8F /* hermez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B197ECEB2602C87600809C8F /* hermez.framework */; };
-		B197ECFA2602C87700809C8F /* hermezTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197ECF92602C87700809C8F /* hermezTests.swift */; };
+		B192039E260D1F9A00A2CFE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192039D260D1F9A00A2CFE4 /* AppDelegate.swift */; };
+		B19203A0260D1F9A00A2CFE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B192039F260D1F9A00A2CFE4 /* ContentView.swift */; };
+		B19203A2260D1F9C00A2CFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19203A1260D1F9C00A2CFE4 /* Assets.xcassets */; };
+		B19203A5260D1F9C00A2CFE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19203A4260D1F9C00A2CFE4 /* Preview Assets.xcassets */; };
+		B19203A8260D1F9C00A2CFE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B19203A6260D1F9C00A2CFE4 /* Main.storyboard */; };
+		B19203B6260D213C00A2CFE4 /* Hermez_Mac.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B1E66BF9260A5B720032F0B9 /* Hermez_Mac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B19203EB260D222400A2CFE4 /* Pods_HermezTesterMac2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0554986096C7D86F76DFA6E5 /* Pods_HermezTesterMac2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B197ECFA2602C87700809C8F /* HermezTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197ECF92602C87700809C8F /* HermezTests.swift */; platformFilter = ios; };
 		B197ECFC2602C87700809C8F /* hermez.h in Headers */ = {isa = PBXBuildFile; fileRef = B197ECEE2602C87600809C8F /* hermez.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B197ED122602C95E00809C8F /* HermezWithRx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197ED0D2602C95D00809C8F /* HermezWithRx.swift */; };
 		B197ED132602C95E00809C8F /* Hermez.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197ED0E2602C95E00809C8F /* Hermez.swift */; };
 		B197ED142602C95E00809C8F /* HermezWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197ED0F2602C95E00809C8F /* HermezWithCombine.swift */; };
 		B197ED152602C95E00809C8F /* HermezBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197ED102602C95E00809C8F /* HermezBrowser.swift */; };
 		B197ED162602C95E00809C8F /* HermezService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197ED112602C95E00809C8F /* HermezService.swift */; };
-		F8C3362C13CB8406143FB9E1 /* Pods_hermezTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432A20190905E1EE9F0D75DF /* Pods_hermezTests.framework */; };
+		B1E66A0D260965C00032F0B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E66A0C260965C00032F0B9 /* AppDelegate.swift */; };
+		B1E66A0F260965C00032F0B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E66A0E260965C00032F0B9 /* SceneDelegate.swift */; };
+		B1E66A14260965C00032F0B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E66A12260965C00032F0B9 /* Main.storyboard */; };
+		B1E66A16260965C20032F0B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1E66A15260965C20032F0B9 /* Assets.xcassets */; };
+		B1E66A19260965C20032F0B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E66A17260965C20032F0B9 /* LaunchScreen.storyboard */; };
+		B1E66A28260965EB0032F0B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E66A27260965EB0032F0B9 /* AppDelegate.swift */; };
+		B1E66A2A260965EB0032F0B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E66A29260965EB0032F0B9 /* SceneDelegate.swift */; };
+		B1E66A2F260965EB0032F0B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E66A2D260965EB0032F0B9 /* Main.storyboard */; };
+		B1E66A31260965EC0032F0B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1E66A30260965EC0032F0B9 /* Assets.xcassets */; };
+		B1E66A34260965EC0032F0B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E66A32260965EC0032F0B9 /* LaunchScreen.storyboard */; };
+		B1E66A44260966040032F0B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E66A43260966040032F0B9 /* AppDelegate.swift */; };
+		B1E66A46260966040032F0B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E66A45260966040032F0B9 /* SceneDelegate.swift */; };
+		B1E66A4B260966040032F0B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E66A49260966040032F0B9 /* Main.storyboard */; };
+		B1E66A4D260966050032F0B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1E66A4C260966050032F0B9 /* Assets.xcassets */; };
+		B1E66A50260966050032F0B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E66A4E260966050032F0B9 /* LaunchScreen.storyboard */; };
+		B1E66A752609672B0032F0B9 /* HermezTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E66A742609672B0032F0B9 /* HermezTextVC.swift */; };
+		B1E66A99260968CB0032F0B9 /* Hermez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B197ECEB2602C87600809C8F /* Hermez.framework */; };
+		B1E66A9C260969310032F0B9 /* Hermez.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B197ECEB2602C87600809C8F /* Hermez.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B1E66B5B260A4B770032F0B9 /* Hermez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B197ECEB2602C87600809C8F /* Hermez.framework */; platformFilter = ios; };
+		B1E66B80260A4EFE0032F0B9 /* HermezTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E66B7F260A4EFE0032F0B9 /* HermezTestVC.swift */; };
+		B1E66B98260A4F2D0032F0B9 /* Hermez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B197ECEB2602C87600809C8F /* Hermez.framework */; };
+		B1E66BBD260A51710032F0B9 /* Pods_hermez_HermezTesterCombine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7ECC6774F2B5A15BA92CF9 /* Pods_hermez_HermezTesterCombine.framework */; };
+		B1E66BC9260A51EF0032F0B9 /* Hermez.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B197ECEB2602C87600809C8F /* Hermez.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B1E66BD3260A55B60032F0B9 /* HermezTestRxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E66BD2260A55B60032F0B9 /* HermezTestRxVC.swift */; };
+		B1E66BD8260A55D30032F0B9 /* Hermez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B197ECEB2602C87600809C8F /* Hermez.framework */; };
+		B1E66BDA260A55F10032F0B9 /* Hermez.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B197ECEB2602C87600809C8F /* Hermez.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B1E66C02260A5B730032F0B9 /* Hermez_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E66BF9260A5B720032F0B9 /* Hermez_Mac.framework */; };
+		B1E66C09260A5B730032F0B9 /* hermez_macTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E66C08260A5B730032F0B9 /* hermez_macTests.swift */; };
+		B1E66C0B260A5B730032F0B9 /* hermez_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = B1E66BFB260A5B720032F0B9 /* hermez_mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1E66C26260A5B860032F0B9 /* Hermez.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197ED0E2602C95E00809C8F /* Hermez.swift */; };
+		B1E66C27260A5B860032F0B9 /* HermezBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197ED102602C95E00809C8F /* HermezBrowser.swift */; };
+		B1E66C28260A5B860032F0B9 /* HermezService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197ED112602C95E00809C8F /* HermezService.swift */; };
+		B1E66C29260A5B860032F0B9 /* HermezWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197ED0F2602C95E00809C8F /* HermezWithCombine.swift */; };
+		B64CF26286E707EF7B1F83AE /* Pods_hermez_macTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5020BE77D9CC96D3D5D56BB9 /* Pods_hermez_macTests.framework */; };
+		BF0DFC530916604B90B344EF /* Pods_hermez_HermezTesterDelegate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961F8EBD978720056C69551A /* Pods_hermez_HermezTesterDelegate.framework */; };
+		CF6F98DAD356B6FF23B42906 /* Pods_hermez_HermezTesterCombine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E66B57260A4B440032F0B9 /* Pods_hermez_HermezTesterCombine.framework */; };
+		D2E2C18452B35991DCA319CE /* Pods_hermez_HermezTesterRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD2B4B3D462055A6B52B030 /* Pods_hermez_HermezTesterRx.framework */; };
+		D9E9A93DC3B8F5075722E90C /* Pods_hermez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E66B42260A49DF0032F0B9 /* Pods_hermez.framework */; };
+		F8C3362C13CB8406143FB9E1 /* Pods_hermezTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432A20190905E1EE9F0D75DF /* Pods_hermezTests.framework */; platformFilter = ios; };
+		FDA7D3CDC2E034E0AE10E864 /* Pods_HermezTesterMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEABCE10055B092F6AAD58A /* Pods_HermezTesterMac.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B197ECF62602C87600809C8F /* PBXContainerItemProxy */ = {
+		B19203B3260D212100A2CFE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B197ECE22602C87600809C8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1E66BF8260A5B720032F0B9;
+			remoteInfo = hermez_mac;
+		};
+		B1E66B59260A4B700032F0B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B197ECE22602C87600809C8F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B197ECEA2602C87600809C8F;
 			remoteInfo = hermez;
 		};
+		B1E66C03260A5B730032F0B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B197ECE22602C87600809C8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1E66BF8260A5B720032F0B9;
+			remoteInfo = hermez_mac;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B19203B5260D213200A2CFE4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B19203EB260D222400A2CFE4 /* Pods_HermezTesterMac2.framework in CopyFiles */,
+				B19203B6260D213C00A2CFE4 /* Hermez_Mac.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E66A9B2609691E0032F0B9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B1E66A9C260969310032F0B9 /* Hermez.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E66BC8260A51DE0032F0B9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B1E66BC9260A51EF0032F0B9 /* Hermez.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E66BD9260A55E70032F0B9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B1E66BDA260A55F10032F0B9 /* Hermez.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		006D9F0D812C2F72D0A8A562 /* Pods-HermezTesterMac2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HermezTesterMac2.debug.xcconfig"; path = "Target Support Files/Pods-HermezTesterMac2/Pods-HermezTesterMac2.debug.xcconfig"; sourceTree = "<group>"; };
+		0554986096C7D86F76DFA6E5 /* Pods_HermezTesterMac2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HermezTesterMac2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		072CAA607967BAED05C9034A /* Pods-hermez_macTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez_macTests.release.xcconfig"; path = "Target Support Files/Pods-hermez_macTests/Pods-hermez_macTests.release.xcconfig"; sourceTree = "<group>"; };
+		0F19C0EA04E4434F58B99222 /* Pods-hermez-hermez_mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez-hermez_mac.release.xcconfig"; path = "Target Support Files/Pods-hermez-hermez_mac/Pods-hermez-hermez_mac.release.xcconfig"; sourceTree = "<group>"; };
+		15F94FF48E0C0201D3D73BD7 /* Pods-hermez_macTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez_macTests.debug.xcconfig"; path = "Target Support Files/Pods-hermez_macTests/Pods-hermez_macTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CE0A01CE0EB2D56E7215EA8 /* Pods-HermezTesterCombine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HermezTesterCombine.release.xcconfig"; path = "Target Support Files/Pods-HermezTesterCombine/Pods-HermezTesterCombine.release.xcconfig"; sourceTree = "<group>"; };
 		20A5CF3A19C6796902225E4B /* Pods_hermez.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hermez.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		327DB750AA7098E871E163CA /* Pods-hermez_mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez_mac.debug.xcconfig"; path = "Target Support Files/Pods-hermez_mac/Pods-hermez_mac.debug.xcconfig"; sourceTree = "<group>"; };
+		4186303E86820CF50431DC2D /* Pods-hermez-HermezTesterCombine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez-HermezTesterCombine.debug.xcconfig"; path = "Target Support Files/Pods-hermez-HermezTesterCombine/Pods-hermez-HermezTesterCombine.debug.xcconfig"; sourceTree = "<group>"; };
 		432A20190905E1EE9F0D75DF /* Pods_hermezTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hermezTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44BC2D38EED7B8186CFD83D6 /* Pods-hermez-HermezTesterRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez-HermezTesterRx.release.xcconfig"; path = "Target Support Files/Pods-hermez-HermezTesterRx/Pods-hermez-HermezTesterRx.release.xcconfig"; sourceTree = "<group>"; };
+		492F9CFDAE4CF202022910E3 /* Pods-HermezTesterMac2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HermezTesterMac2.release.xcconfig"; path = "Target Support Files/Pods-HermezTesterMac2/Pods-HermezTesterMac2.release.xcconfig"; sourceTree = "<group>"; };
 		4C8C3431B94B5A5456E54986 /* Pods-hermez.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez.debug.xcconfig"; path = "Target Support Files/Pods-hermez/Pods-hermez.debug.xcconfig"; sourceTree = "<group>"; };
+		4F7ECC6774F2B5A15BA92CF9 /* Pods_hermez_HermezTesterCombine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hermez_HermezTesterCombine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5020BE77D9CC96D3D5D56BB9 /* Pods_hermez_macTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hermez_macTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65EDFBC34D072D1A9381493A /* Pods-hermez-HermezTesterDelegate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez-HermezTesterDelegate.debug.xcconfig"; path = "Target Support Files/Pods-hermez-HermezTesterDelegate/Pods-hermez-HermezTesterDelegate.debug.xcconfig"; sourceTree = "<group>"; };
 		66377CF37771405635E7004E /* Pods-hermez-hermezTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez-hermezTests.release.xcconfig"; path = "Target Support Files/Pods-hermez-hermezTests/Pods-hermez-hermezTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B2A05675F9B8621E19EFB3E /* Pods-hermezTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermezTests.release.xcconfig"; path = "Target Support Files/Pods-hermezTests/Pods-hermezTests.release.xcconfig"; sourceTree = "<group>"; };
-		B197ECEB2602C87600809C8F /* hermez.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hermez.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C2923B4DC149E367E872059 /* Pods-HermezTesterMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HermezTesterMac.debug.xcconfig"; path = "Target Support Files/Pods-HermezTesterMac/Pods-HermezTesterMac.debug.xcconfig"; sourceTree = "<group>"; };
+		6FDBE3E2B06494FBAE7B75B2 /* Pods-hermez_mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez_mac.release.xcconfig"; path = "Target Support Files/Pods-hermez_mac/Pods-hermez_mac.release.xcconfig"; sourceTree = "<group>"; };
+		7548E1CD35E03C83E5B5A95E /* Pods-hermez-HermezTesterRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez-HermezTesterRx.debug.xcconfig"; path = "Target Support Files/Pods-hermez-HermezTesterRx/Pods-hermez-HermezTesterRx.debug.xcconfig"; sourceTree = "<group>"; };
+		961F8EBD978720056C69551A /* Pods_hermez_HermezTesterDelegate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hermez_HermezTesterDelegate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3490DE663BFCE8B68F09ADC /* Pods_hermez_HermezTesterMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hermez_HermezTesterMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B192039B260D1F9A00A2CFE4 /* HermezTesterMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HermezTesterMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B192039D260D1F9A00A2CFE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B192039F260D1F9A00A2CFE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B19203A1260D1F9C00A2CFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B19203A4260D1F9C00A2CFE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B19203A7260D1F9C00A2CFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B19203A9260D1F9C00A2CFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B19203AA260D1F9C00A2CFE4 /* HermezTesterMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HermezTesterMac.entitlements; sourceTree = "<group>"; };
+		B197ECEB2602C87600809C8F /* Hermez.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hermez.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B197ECEE2602C87600809C8F /* hermez.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hermez.h; sourceTree = "<group>"; };
 		B197ECEF2602C87600809C8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B197ECF42602C87600809C8F /* hermezTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hermezTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B197ECF92602C87700809C8F /* hermezTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hermezTests.swift; sourceTree = "<group>"; };
+		B197ECF92602C87700809C8F /* HermezTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermezTests.swift; sourceTree = "<group>"; };
 		B197ECFB2602C87700809C8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B197ED0D2602C95D00809C8F /* HermezWithRx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HermezWithRx.swift; path = hermez/HermezWithRx.swift; sourceTree = "<group>"; };
 		B197ED0E2602C95E00809C8F /* Hermez.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Hermez.swift; path = hermez/Hermez.swift; sourceTree = "<group>"; };
 		B197ED0F2602C95E00809C8F /* HermezWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HermezWithCombine.swift; path = hermez/HermezWithCombine.swift; sourceTree = "<group>"; };
 		B197ED102602C95E00809C8F /* HermezBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HermezBrowser.swift; path = hermez/HermezBrowser.swift; sourceTree = "<group>"; };
 		B197ED112602C95E00809C8F /* HermezService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HermezService.swift; path = hermez/HermezService.swift; sourceTree = "<group>"; };
+		B1E66A0A260965C00032F0B9 /* Hermez Old School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hermez Old School.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E66A0C260965C00032F0B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1E66A0E260965C00032F0B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B1E66A13260965C00032F0B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1E66A15260965C20032F0B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1E66A18260965C20032F0B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1E66A1A260965C20032F0B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1E66A25260965EB0032F0B9 /* Hermez Rx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hermez Rx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E66A27260965EB0032F0B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1E66A29260965EB0032F0B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B1E66A2E260965EB0032F0B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1E66A30260965EC0032F0B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1E66A33260965EC0032F0B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1E66A35260965EC0032F0B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1E66A41260966040032F0B9 /* Hermez Combine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hermez Combine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E66A43260966040032F0B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1E66A45260966040032F0B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B1E66A4A260966040032F0B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1E66A4C260966050032F0B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1E66A4F260966050032F0B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1E66A51260966050032F0B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1E66A742609672B0032F0B9 /* HermezTextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermezTextVC.swift; sourceTree = "<group>"; };
+		B1E66B42260A49DF0032F0B9 /* Pods_hermez.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_hermez.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E66B49260A4ADB0032F0B9 /* Pods_hermez_HermezTesterCombine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_hermez_HermezTesterCombine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E66B57260A4B440032F0B9 /* Pods_hermez_HermezTesterCombine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_hermez_HermezTesterCombine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E66B7F260A4EFE0032F0B9 /* HermezTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermezTestVC.swift; sourceTree = "<group>"; };
+		B1E66BD2260A55B60032F0B9 /* HermezTestRxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermezTestRxVC.swift; sourceTree = "<group>"; };
+		B1E66BF9260A5B720032F0B9 /* Hermez_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hermez_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E66BFB260A5B720032F0B9 /* hermez_mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hermez_mac.h; sourceTree = "<group>"; };
+		B1E66BFC260A5B720032F0B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1E66C01260A5B730032F0B9 /* hermez_macTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hermez_macTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E66C08260A5B730032F0B9 /* hermez_macTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hermez_macTests.swift; sourceTree = "<group>"; };
+		B1E66C0A260A5B730032F0B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1E66CCE260ACC5A0032F0B9 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E66CD4260ACC690032F0B9 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5271E96E2C94AEAC0107190 /* Pods-hermez-HermezTesterDelegate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez-HermezTesterDelegate.release.xcconfig"; path = "Target Support Files/Pods-hermez-HermezTesterDelegate/Pods-hermez-HermezTesterDelegate.release.xcconfig"; sourceTree = "<group>"; };
 		BD3EA0A5E62B21E0F54592BA /* Pods-hermez-hermezTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez-hermezTests.debug.xcconfig"; path = "Target Support Files/Pods-hermez-hermezTests/Pods-hermez-hermezTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C25B1A351586B9835B495435 /* Pods-hermez.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez.release.xcconfig"; path = "Target Support Files/Pods-hermez/Pods-hermez.release.xcconfig"; sourceTree = "<group>"; };
+		C5EC11DDEFE9D39FBF38502B /* Pods-HermezTesterMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HermezTesterMac.release.xcconfig"; path = "Target Support Files/Pods-HermezTesterMac/Pods-HermezTesterMac.release.xcconfig"; sourceTree = "<group>"; };
+		C9EC89659BA5C64B3D03E5F8 /* Pods-hermez-HermezTesterMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez-HermezTesterMac.debug.xcconfig"; path = "Target Support Files/Pods-hermez-HermezTesterMac/Pods-hermez-HermezTesterMac.debug.xcconfig"; sourceTree = "<group>"; };
+		CFEABCE10055B092F6AAD58A /* Pods_HermezTesterMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HermezTesterMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC63E80DA0966321A1A77AE9 /* Pods-HermezTesterCombine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HermezTesterCombine.debug.xcconfig"; path = "Target Support Files/Pods-HermezTesterCombine/Pods-HermezTesterCombine.debug.xcconfig"; sourceTree = "<group>"; };
+		E0A8ABB64DD97E823DDCD964 /* Pods-hermez-HermezTesterMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez-HermezTesterMac.release.xcconfig"; path = "Target Support Files/Pods-hermez-HermezTesterMac/Pods-hermez-HermezTesterMac.release.xcconfig"; sourceTree = "<group>"; };
+		EC9B7921F98C0A2AA35FF062 /* Pods-hermez-HermezTesterCombine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez-HermezTesterCombine.release.xcconfig"; path = "Target Support Files/Pods-hermez-HermezTesterCombine/Pods-hermez-HermezTesterCombine.release.xcconfig"; sourceTree = "<group>"; };
+		F2AAA3C72C58DEB140E1E245 /* Pods-hermez-hermez_mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermez-hermez_mac.debug.xcconfig"; path = "Target Support Files/Pods-hermez-hermez_mac/Pods-hermez-hermez_mac.debug.xcconfig"; sourceTree = "<group>"; };
+		FAC845794A7CFCF9475125FC /* Pods_hermez_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hermez_mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC920308260F74F8D9F98802 /* Pods-hermezTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hermezTests.debug.xcconfig"; path = "Target Support Files/Pods-hermezTests/Pods-hermezTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FFD2B4B3D462055A6B52B030 /* Pods_hermez_HermezTesterRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hermez_HermezTesterRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B1920398260D1F9A00A2CFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA7D3CDC2E034E0AE10E864 /* Pods_HermezTesterMac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B197ECE82602C87600809C8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7D97E8109D370E80D77B6A88 /* Pods_hermez.framework in Frameworks */,
+				D9E9A93DC3B8F5075722E90C /* Pods_hermez.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,14 +248,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B197ECF52602C87600809C8F /* hermez.framework in Frameworks */,
+				B1E66B5B260A4B770032F0B9 /* Hermez.framework in Frameworks */,
 				F8C3362C13CB8406143FB9E1 /* Pods_hermezTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E66A07260965C00032F0B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0DFC530916604B90B344EF /* Pods_hermez_HermezTesterDelegate.framework in Frameworks */,
+				B1E66B98260A4F2D0032F0B9 /* Hermez.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E66A22260965EB0032F0B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E66BD8260A55D30032F0B9 /* Hermez.framework in Frameworks */,
+				D2E2C18452B35991DCA319CE /* Pods_hermez_HermezTesterRx.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E66A3E260966040032F0B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E66BBD260A51710032F0B9 /* Pods_hermez_HermezTesterCombine.framework in Frameworks */,
+				B1E66A99260968CB0032F0B9 /* Hermez.framework in Frameworks */,
+				CF6F98DAD356B6FF23B42906 /* Pods_hermez_HermezTesterCombine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E66BF6260A5B720032F0B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6087E4513095C9CEE721ADBB /* Pods_hermez_mac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E66BFE260A5B730032F0B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E66C02260A5B730032F0B9 /* Hermez_Mac.framework in Frameworks */,
+				B64CF26286E707EF7B1F83AE /* Pods_hermez_macTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B192039C260D1F9A00A2CFE4 /* HermezTesterMac */ = {
+			isa = PBXGroup;
+			children = (
+				B192039D260D1F9A00A2CFE4 /* AppDelegate.swift */,
+				B192039F260D1F9A00A2CFE4 /* ContentView.swift */,
+				B19203A1260D1F9C00A2CFE4 /* Assets.xcassets */,
+				B19203A6260D1F9C00A2CFE4 /* Main.storyboard */,
+				B19203A9260D1F9C00A2CFE4 /* Info.plist */,
+				B19203AA260D1F9C00A2CFE4 /* HermezTesterMac.entitlements */,
+				B19203A3260D1F9C00A2CFE4 /* Preview Content */,
+			);
+			path = HermezTesterMac;
+			sourceTree = "<group>";
+		};
+		B19203A3260D1F9C00A2CFE4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B19203A4260D1F9C00A2CFE4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		B197ECE12602C87600809C8F = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +333,12 @@
 				B197ED0D2602C95D00809C8F /* HermezWithRx.swift */,
 				B197ECED2602C87600809C8F /* hermez */,
 				B197ECF82602C87700809C8F /* hermezTests */,
+				B1E66A0B260965C00032F0B9 /* HermezTesterDelegate */,
+				B1E66A26260965EB0032F0B9 /* HermezTesterRx */,
+				B1E66A42260966040032F0B9 /* HermezTesterCombine */,
+				B1E66BFA260A5B720032F0B9 /* hermez_mac */,
+				B1E66C07260A5B730032F0B9 /* hermez_macTests */,
+				B192039C260D1F9A00A2CFE4 /* HermezTesterMac */,
 				B197ECEC2602C87600809C8F /* Products */,
 				B4DD4D6E6DF5C7F0292C4945 /* Pods */,
 				B5A3169DC53640423F3E63F9 /* Frameworks */,
@@ -91,8 +348,14 @@
 		B197ECEC2602C87600809C8F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B197ECEB2602C87600809C8F /* hermez.framework */,
+				B197ECEB2602C87600809C8F /* Hermez.framework */,
 				B197ECF42602C87600809C8F /* hermezTests.xctest */,
+				B1E66A0A260965C00032F0B9 /* Hermez Old School.app */,
+				B1E66A25260965EB0032F0B9 /* Hermez Rx.app */,
+				B1E66A41260966040032F0B9 /* Hermez Combine.app */,
+				B1E66BF9260A5B720032F0B9 /* Hermez_Mac.framework */,
+				B1E66C01260A5B730032F0B9 /* hermez_macTests.xctest */,
+				B192039B260D1F9A00A2CFE4 /* HermezTesterMac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,10 +372,70 @@
 		B197ECF82602C87700809C8F /* hermezTests */ = {
 			isa = PBXGroup;
 			children = (
-				B197ECF92602C87700809C8F /* hermezTests.swift */,
+				B197ECF92602C87700809C8F /* HermezTests.swift */,
 				B197ECFB2602C87700809C8F /* Info.plist */,
 			);
 			path = hermezTests;
+			sourceTree = "<group>";
+		};
+		B1E66A0B260965C00032F0B9 /* HermezTesterDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B1E66B7F260A4EFE0032F0B9 /* HermezTestVC.swift */,
+				B1E66A0C260965C00032F0B9 /* AppDelegate.swift */,
+				B1E66A0E260965C00032F0B9 /* SceneDelegate.swift */,
+				B1E66A12260965C00032F0B9 /* Main.storyboard */,
+				B1E66A15260965C20032F0B9 /* Assets.xcassets */,
+				B1E66A17260965C20032F0B9 /* LaunchScreen.storyboard */,
+				B1E66A1A260965C20032F0B9 /* Info.plist */,
+			);
+			path = HermezTesterDelegate;
+			sourceTree = "<group>";
+		};
+		B1E66A26260965EB0032F0B9 /* HermezTesterRx */ = {
+			isa = PBXGroup;
+			children = (
+				B1E66BD2260A55B60032F0B9 /* HermezTestRxVC.swift */,
+				B1E66A27260965EB0032F0B9 /* AppDelegate.swift */,
+				B1E66A29260965EB0032F0B9 /* SceneDelegate.swift */,
+				B1E66A2D260965EB0032F0B9 /* Main.storyboard */,
+				B1E66A30260965EC0032F0B9 /* Assets.xcassets */,
+				B1E66A32260965EC0032F0B9 /* LaunchScreen.storyboard */,
+				B1E66A35260965EC0032F0B9 /* Info.plist */,
+			);
+			path = HermezTesterRx;
+			sourceTree = "<group>";
+		};
+		B1E66A42260966040032F0B9 /* HermezTesterCombine */ = {
+			isa = PBXGroup;
+			children = (
+				B1E66A742609672B0032F0B9 /* HermezTextVC.swift */,
+				B1E66A43260966040032F0B9 /* AppDelegate.swift */,
+				B1E66A45260966040032F0B9 /* SceneDelegate.swift */,
+				B1E66A49260966040032F0B9 /* Main.storyboard */,
+				B1E66A4C260966050032F0B9 /* Assets.xcassets */,
+				B1E66A4E260966050032F0B9 /* LaunchScreen.storyboard */,
+				B1E66A51260966050032F0B9 /* Info.plist */,
+			);
+			path = HermezTesterCombine;
+			sourceTree = "<group>";
+		};
+		B1E66BFA260A5B720032F0B9 /* hermez_mac */ = {
+			isa = PBXGroup;
+			children = (
+				B1E66BFB260A5B720032F0B9 /* hermez_mac.h */,
+				B1E66BFC260A5B720032F0B9 /* Info.plist */,
+			);
+			path = hermez_mac;
+			sourceTree = "<group>";
+		};
+		B1E66C07260A5B730032F0B9 /* hermez_macTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1E66C08260A5B730032F0B9 /* hermez_macTests.swift */,
+				B1E66C0A260A5B730032F0B9 /* Info.plist */,
+			);
+			path = hermez_macTests;
 			sourceTree = "<group>";
 		};
 		B4DD4D6E6DF5C7F0292C4945 /* Pods */ = {
@@ -124,6 +447,26 @@
 				66377CF37771405635E7004E /* Pods-hermez-hermezTests.release.xcconfig */,
 				FC920308260F74F8D9F98802 /* Pods-hermezTests.debug.xcconfig */,
 				6B2A05675F9B8621E19EFB3E /* Pods-hermezTests.release.xcconfig */,
+				DC63E80DA0966321A1A77AE9 /* Pods-HermezTesterCombine.debug.xcconfig */,
+				1CE0A01CE0EB2D56E7215EA8 /* Pods-HermezTesterCombine.release.xcconfig */,
+				4186303E86820CF50431DC2D /* Pods-hermez-HermezTesterCombine.debug.xcconfig */,
+				EC9B7921F98C0A2AA35FF062 /* Pods-hermez-HermezTesterCombine.release.xcconfig */,
+				C9EC89659BA5C64B3D03E5F8 /* Pods-hermez-HermezTesterMac.debug.xcconfig */,
+				E0A8ABB64DD97E823DDCD964 /* Pods-hermez-HermezTesterMac.release.xcconfig */,
+				65EDFBC34D072D1A9381493A /* Pods-hermez-HermezTesterDelegate.debug.xcconfig */,
+				B5271E96E2C94AEAC0107190 /* Pods-hermez-HermezTesterDelegate.release.xcconfig */,
+				7548E1CD35E03C83E5B5A95E /* Pods-hermez-HermezTesterRx.debug.xcconfig */,
+				44BC2D38EED7B8186CFD83D6 /* Pods-hermez-HermezTesterRx.release.xcconfig */,
+				F2AAA3C72C58DEB140E1E245 /* Pods-hermez-hermez_mac.debug.xcconfig */,
+				0F19C0EA04E4434F58B99222 /* Pods-hermez-hermez_mac.release.xcconfig */,
+				327DB750AA7098E871E163CA /* Pods-hermez_mac.debug.xcconfig */,
+				6FDBE3E2B06494FBAE7B75B2 /* Pods-hermez_mac.release.xcconfig */,
+				6C2923B4DC149E367E872059 /* Pods-HermezTesterMac.debug.xcconfig */,
+				C5EC11DDEFE9D39FBF38502B /* Pods-HermezTesterMac.release.xcconfig */,
+				15F94FF48E0C0201D3D73BD7 /* Pods-hermez_macTests.debug.xcconfig */,
+				072CAA607967BAED05C9034A /* Pods-hermez_macTests.release.xcconfig */,
+				006D9F0D812C2F72D0A8A562 /* Pods-HermezTesterMac2.debug.xcconfig */,
+				492F9CFDAE4CF202022910E3 /* Pods-HermezTesterMac2.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -131,8 +474,20 @@
 		B5A3169DC53640423F3E63F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B1E66CD4260ACC690032F0B9 /* CocoaAsyncSocket.framework */,
+				B1E66CCE260ACC5A0032F0B9 /* CocoaAsyncSocket.framework */,
+				B1E66B57260A4B440032F0B9 /* Pods_hermez_HermezTesterCombine.framework */,
+				B1E66B49260A4ADB0032F0B9 /* Pods_hermez_HermezTesterCombine.framework */,
+				B1E66B42260A49DF0032F0B9 /* Pods_hermez.framework */,
 				20A5CF3A19C6796902225E4B /* Pods_hermez.framework */,
 				432A20190905E1EE9F0D75DF /* Pods_hermezTests.framework */,
+				4F7ECC6774F2B5A15BA92CF9 /* Pods_hermez_HermezTesterCombine.framework */,
+				A3490DE663BFCE8B68F09ADC /* Pods_hermez_HermezTesterMac.framework */,
+				961F8EBD978720056C69551A /* Pods_hermez_HermezTesterDelegate.framework */,
+				FFD2B4B3D462055A6B52B030 /* Pods_hermez_HermezTesterRx.framework */,
+				FAC845794A7CFCF9475125FC /* Pods_hermez_mac.framework */,
+				CFEABCE10055B092F6AAD58A /* Pods_HermezTesterMac.framework */,
+				5020BE77D9CC96D3D5D56BB9 /* Pods_hermez_macTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,9 +503,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1E66BF4260A5B720032F0B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E66C0B260A5B730032F0B9 /* hermez_mac.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B192039A260D1F9A00A2CFE4 /* HermezTesterMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B19203AB260D1F9C00A2CFE4 /* Build configuration list for PBXNativeTarget "HermezTesterMac" */;
+			buildPhases = (
+				A0E8439F5C8D822F24F99538 /* [CP] Check Pods Manifest.lock */,
+				B1920397260D1F9A00A2CFE4 /* Sources */,
+				B1920398260D1F9A00A2CFE4 /* Frameworks */,
+				B1920399260D1F9A00A2CFE4 /* Resources */,
+				B19203B5260D213200A2CFE4 /* CopyFiles */,
+				2F4CDDA2B5D0204ED753564A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B19203B4260D212100A2CFE4 /* PBXTargetDependency */,
+			);
+			name = HermezTesterMac;
+			productName = HermezTesterMac2;
+			productReference = B192039B260D1F9A00A2CFE4 /* HermezTesterMac.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B197ECEA2602C87600809C8F /* hermez */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B197ECFF2602C87700809C8F /* Build configuration list for PBXNativeTarget "hermez" */;
@@ -167,7 +551,7 @@
 			);
 			name = hermez;
 			productName = hermez;
-			productReference = B197ECEB2602C87600809C8F /* hermez.framework */;
+			productReference = B197ECEB2602C87600809C8F /* Hermez.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B197ECF32602C87600809C8F /* hermezTests */ = {
@@ -183,11 +567,110 @@
 			buildRules = (
 			);
 			dependencies = (
-				B197ECF72602C87600809C8F /* PBXTargetDependency */,
+				B1E66B5A260A4B700032F0B9 /* PBXTargetDependency */,
 			);
 			name = hermezTests;
 			productName = hermezTests;
 			productReference = B197ECF42602C87600809C8F /* hermezTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1E66A09260965C00032F0B9 /* HermezTesterDelegate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1E66A1B260965C20032F0B9 /* Build configuration list for PBXNativeTarget "HermezTesterDelegate" */;
+			buildPhases = (
+				6F4A5AB5E2823A7E4454ACB8 /* [CP] Check Pods Manifest.lock */,
+				B1E66A06260965C00032F0B9 /* Sources */,
+				B1E66A07260965C00032F0B9 /* Frameworks */,
+				B1E66A08260965C00032F0B9 /* Resources */,
+				423C1BC9AE345A54922E325E /* [CP] Embed Pods Frameworks */,
+				B1E66BC8260A51DE0032F0B9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HermezTesterDelegate;
+			productName = HermezTesterDelegate;
+			productReference = B1E66A0A260965C00032F0B9 /* Hermez Old School.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1E66A24260965EB0032F0B9 /* HermezTesterRx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1E66A36260965EC0032F0B9 /* Build configuration list for PBXNativeTarget "HermezTesterRx" */;
+			buildPhases = (
+				F6F3EE2ABFF45030525F90F8 /* [CP] Check Pods Manifest.lock */,
+				B1E66A21260965EB0032F0B9 /* Sources */,
+				B1E66A22260965EB0032F0B9 /* Frameworks */,
+				B1E66A23260965EB0032F0B9 /* Resources */,
+				B1E66BD9260A55E70032F0B9 /* CopyFiles */,
+				F886D92AB870F610E50A98FA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HermezTesterRx;
+			productName = HermezTesterRx;
+			productReference = B1E66A25260965EB0032F0B9 /* Hermez Rx.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1E66A40260966040032F0B9 /* HermezTesterCombine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1E66A52260966050032F0B9 /* Build configuration list for PBXNativeTarget "HermezTesterCombine" */;
+			buildPhases = (
+				01AE613EA49CA549ECA3636F /* [CP] Check Pods Manifest.lock */,
+				B1E66A3D260966040032F0B9 /* Sources */,
+				B1E66A3E260966040032F0B9 /* Frameworks */,
+				B1E66A3F260966040032F0B9 /* Resources */,
+				B1E66A9B2609691E0032F0B9 /* CopyFiles */,
+				ED1BF37A7A31195C397AF9AC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HermezTesterCombine;
+			productName = HermezTesterCombine;
+			productReference = B1E66A41260966040032F0B9 /* Hermez Combine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1E66BF8260A5B720032F0B9 /* hermez_mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1E66C10260A5B730032F0B9 /* Build configuration list for PBXNativeTarget "hermez_mac" */;
+			buildPhases = (
+				3894F4846642FF304E8B09B4 /* [CP] Check Pods Manifest.lock */,
+				B1E66BF4260A5B720032F0B9 /* Headers */,
+				B1E66BF5260A5B720032F0B9 /* Sources */,
+				B1E66BF6260A5B720032F0B9 /* Frameworks */,
+				B1E66BF7260A5B720032F0B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hermez_mac;
+			productName = hermez_mac;
+			productReference = B1E66BF9260A5B720032F0B9 /* Hermez_Mac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B1E66C00260A5B730032F0B9 /* hermez_macTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1E66C13260A5B730032F0B9 /* Build configuration list for PBXNativeTarget "hermez_macTests" */;
+			buildPhases = (
+				05CCBEFE8162878D1D8B038F /* [CP] Check Pods Manifest.lock */,
+				B1E66BFD260A5B730032F0B9 /* Sources */,
+				B1E66BFE260A5B730032F0B9 /* Frameworks */,
+				B1E66BFF260A5B730032F0B9 /* Resources */,
+				1245F67430A7F91904A62B5D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1E66C04260A5B730032F0B9 /* PBXTargetDependency */,
+			);
+			name = hermez_macTests;
+			productName = hermez_macTests;
+			productReference = B1E66C01260A5B730032F0B9 /* hermez_macTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -199,10 +682,28 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					B192039A260D1F9A00A2CFE4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					B197ECEA2602C87600809C8F = {
 						CreatedOnToolsVersion = 12.4;
 					};
 					B197ECF32602C87600809C8F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					B1E66A09260965C00032F0B9 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					B1E66A24260965EB0032F0B9 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					B1E66A40260966040032F0B9 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					B1E66BF8260A5B720032F0B9 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					B1E66C00260A5B730032F0B9 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -222,11 +723,27 @@
 			targets = (
 				B197ECEA2602C87600809C8F /* hermez */,
 				B197ECF32602C87600809C8F /* hermezTests */,
+				B1E66BF8260A5B720032F0B9 /* hermez_mac */,
+				B1E66C00260A5B730032F0B9 /* hermez_macTests */,
+				B1E66A09260965C00032F0B9 /* HermezTesterDelegate */,
+				B1E66A24260965EB0032F0B9 /* HermezTesterRx */,
+				B1E66A40260966040032F0B9 /* HermezTesterCombine */,
+				B192039A260D1F9A00A2CFE4 /* HermezTesterMac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B1920399260D1F9A00A2CFE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19203A8260D1F9C00A2CFE4 /* Main.storyboard in Resources */,
+				B19203A5260D1F9C00A2CFE4 /* Preview Assets.xcassets in Resources */,
+				B19203A2260D1F9C00A2CFE4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B197ECE92602C87600809C8F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,9 +758,170 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1E66A08260965C00032F0B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E66A19260965C20032F0B9 /* LaunchScreen.storyboard in Resources */,
+				B1E66A16260965C20032F0B9 /* Assets.xcassets in Resources */,
+				B1E66A14260965C00032F0B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E66A23260965EB0032F0B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E66A34260965EC0032F0B9 /* LaunchScreen.storyboard in Resources */,
+				B1E66A31260965EC0032F0B9 /* Assets.xcassets in Resources */,
+				B1E66A2F260965EB0032F0B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E66A3F260966040032F0B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E66A50260966050032F0B9 /* LaunchScreen.storyboard in Resources */,
+				B1E66A4D260966050032F0B9 /* Assets.xcassets in Resources */,
+				B1E66A4B260966040032F0B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E66BF7260A5B720032F0B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E66BFF260A5B730032F0B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		01AE613EA49CA549ECA3636F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hermez-HermezTesterCombine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		05CCBEFE8162878D1D8B038F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hermez_macTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1245F67430A7F91904A62B5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hermez_macTests/Pods-hermez_macTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hermez_macTests/Pods-hermez_macTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hermez_macTests/Pods-hermez_macTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F4CDDA2B5D0204ED753564A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HermezTesterMac/Pods-HermezTesterMac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HermezTesterMac/Pods-HermezTesterMac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HermezTesterMac/Pods-HermezTesterMac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3894F4846642FF304E8B09B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hermez_mac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		423C1BC9AE345A54922E325E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hermez-HermezTesterDelegate/Pods-hermez-HermezTesterDelegate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hermez-HermezTesterDelegate/Pods-hermez-HermezTesterDelegate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hermez-HermezTesterDelegate/Pods-hermez-HermezTesterDelegate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5352CAE49313E7805C169D5D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -283,6 +961,50 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hermezTests/Pods-hermezTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6F4A5AB5E2823A7E4454ACB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hermez-HermezTesterDelegate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0E8439F5C8D822F24F99538 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HermezTesterMac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BBF5B901BC060B66CBF97814 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,9 +1027,74 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ED1BF37A7A31195C397AF9AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hermez-HermezTesterCombine/Pods-hermez-HermezTesterCombine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hermez-HermezTesterCombine/Pods-hermez-HermezTesterCombine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hermez-HermezTesterCombine/Pods-hermez-HermezTesterCombine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6F3EE2ABFF45030525F90F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hermez-HermezTesterRx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F886D92AB870F610E50A98FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hermez-HermezTesterRx/Pods-hermez-HermezTesterRx-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hermez-HermezTesterRx/Pods-hermez-HermezTesterRx-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hermez-HermezTesterRx/Pods-hermez-HermezTesterRx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B1920397260D1F9A00A2CFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19203A0260D1F9A00A2CFE4 /* ContentView.swift in Sources */,
+				B192039E260D1F9A00A2CFE4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B197ECE72602C87600809C8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,21 +1111,192 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B197ECFA2602C87700809C8F /* hermezTests.swift in Sources */,
+				B197ECFA2602C87700809C8F /* HermezTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E66A06260965C00032F0B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E66B80260A4EFE0032F0B9 /* HermezTestVC.swift in Sources */,
+				B1E66A0D260965C00032F0B9 /* AppDelegate.swift in Sources */,
+				B1E66A0F260965C00032F0B9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E66A21260965EB0032F0B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E66BD3260A55B60032F0B9 /* HermezTestRxVC.swift in Sources */,
+				B1E66A28260965EB0032F0B9 /* AppDelegate.swift in Sources */,
+				B1E66A2A260965EB0032F0B9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E66A3D260966040032F0B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E66A752609672B0032F0B9 /* HermezTextVC.swift in Sources */,
+				B1E66A44260966040032F0B9 /* AppDelegate.swift in Sources */,
+				B1E66A46260966040032F0B9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E66BF5260A5B720032F0B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E66C26260A5B860032F0B9 /* Hermez.swift in Sources */,
+				B1E66C27260A5B860032F0B9 /* HermezBrowser.swift in Sources */,
+				B1E66C28260A5B860032F0B9 /* HermezService.swift in Sources */,
+				B1E66C29260A5B860032F0B9 /* HermezWithCombine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E66BFD260A5B730032F0B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E66C09260A5B730032F0B9 /* hermez_macTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B197ECF72602C87600809C8F /* PBXTargetDependency */ = {
+		B19203B4260D212100A2CFE4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			target = B1E66BF8260A5B720032F0B9 /* hermez_mac */;
+			targetProxy = B19203B3260D212100A2CFE4 /* PBXContainerItemProxy */;
+		};
+		B1E66B5A260A4B700032F0B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = B197ECEA2602C87600809C8F /* hermez */;
-			targetProxy = B197ECF62602C87600809C8F /* PBXContainerItemProxy */;
+			targetProxy = B1E66B59260A4B700032F0B9 /* PBXContainerItemProxy */;
+		};
+		B1E66C04260A5B730032F0B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1E66BF8260A5B720032F0B9 /* hermez_mac */;
+			targetProxy = B1E66C03260A5B730032F0B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		B19203A6260D1F9C00A2CFE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B19203A7260D1F9C00A2CFE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1E66A12260965C00032F0B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1E66A13260965C00032F0B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1E66A17260965C20032F0B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1E66A18260965C20032F0B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B1E66A2D260965EB0032F0B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1E66A2E260965EB0032F0B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1E66A32260965EC0032F0B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1E66A33260965EC0032F0B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B1E66A49260966040032F0B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1E66A4A260966040032F0B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1E66A4E260966050032F0B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1E66A4F260966050032F0B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		B19203AC260D1F9C00A2CFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2923B4DC149E367E872059 /* Pods-HermezTesterMac.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HermezTesterMac/HermezTesterMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"HermezTesterMac/Preview Content\"";
+				DEVELOPMENT_TEAM = 6FWRL3S2ZK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HermezTesterMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasgustilo.HermezTesterMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B19203AD260D1F9C00A2CFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5EC11DDEFE9D39FBF38502B /* Pods-HermezTesterMac.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HermezTesterMac/HermezTesterMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"HermezTesterMac/Preview Content\"";
+				DEVELOPMENT_TEAM = 6FWRL3S2ZK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HermezTesterMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasgustilo.HermezTesterMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		B197ECFD2602C87700809C8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -391,10 +1349,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Hermez;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -449,9 +1408,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = Hermez;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -465,7 +1425,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C8C3431B94B5A5456E54986 /* Pods-hermez.debug.xcconfig */;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = "$(inherited)";
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6FWRL3S2ZK;
@@ -480,9 +1440,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasgustilo.hermez;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Hermez;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -492,7 +1454,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C25B1A351586B9835B495435 /* Pods-hermez.release.xcconfig */;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = "$(inherited)";
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6FWRL3S2ZK;
@@ -507,9 +1469,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasgustilo.hermez;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Hermez;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -557,9 +1521,236 @@
 			};
 			name = Release;
 		};
+		B1E66A1C260965C20032F0B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65EDFBC34D072D1A9381493A /* Pods-hermez-HermezTesterDelegate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FWRL3S2ZK;
+				INFOPLIST_FILE = HermezTesterDelegate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasgustilo.HermezTesterDelegate;
+				PRODUCT_NAME = "Hermez Old School";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1E66A1D260965C20032F0B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5271E96E2C94AEAC0107190 /* Pods-hermez-HermezTesterDelegate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FWRL3S2ZK;
+				INFOPLIST_FILE = HermezTesterDelegate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasgustilo.HermezTesterDelegate;
+				PRODUCT_NAME = "Hermez Old School";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1E66A37260965EC0032F0B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7548E1CD35E03C83E5B5A95E /* Pods-hermez-HermezTesterRx.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FWRL3S2ZK;
+				INFOPLIST_FILE = HermezTesterRx/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasgustilo.HermezTesterRx;
+				PRODUCT_NAME = "Hermez Rx";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1E66A38260965EC0032F0B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44BC2D38EED7B8186CFD83D6 /* Pods-hermez-HermezTesterRx.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FWRL3S2ZK;
+				INFOPLIST_FILE = HermezTesterRx/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasgustilo.HermezTesterRx;
+				PRODUCT_NAME = "Hermez Rx";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1E66A53260966050032F0B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4186303E86820CF50431DC2D /* Pods-hermez-HermezTesterCombine.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FWRL3S2ZK;
+				INFOPLIST_FILE = HermezTesterCombine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasgustilo.HermezTesterCombine;
+				PRODUCT_NAME = "Hermez Combine";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1E66A54260966050032F0B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC9B7921F98C0A2AA35FF062 /* Pods-hermez-HermezTesterCombine.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FWRL3S2ZK;
+				INFOPLIST_FILE = HermezTesterCombine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasgustilo.HermezTesterCombine;
+				PRODUCT_NAME = "Hermez Combine";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1E66C11260A5B730032F0B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 327DB750AA7098E871E163CA /* Pods-hermez_mac.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6FWRL3S2ZK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = hermez_mac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicholasgustilo.hermez-mac";
+				PRODUCT_NAME = Hermez_Mac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B1E66C12260A5B730032F0B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FDBE3E2B06494FBAE7B75B2 /* Pods-hermez_mac.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6FWRL3S2ZK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = hermez_mac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicholasgustilo.hermez-mac";
+				PRODUCT_NAME = Hermez_Mac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B1E66C14260A5B730032F0B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15F94FF48E0C0201D3D73BD7 /* Pods-hermez_macTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6FWRL3S2ZK;
+				INFOPLIST_FILE = hermez_macTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicholasgustilo.hermez-macTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B1E66C15260A5B730032F0B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 072CAA607967BAED05C9034A /* Pods-hermez_macTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6FWRL3S2ZK;
+				INFOPLIST_FILE = hermez_macTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicholasgustilo.hermez-macTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B19203AB260D1F9C00A2CFE4 /* Build configuration list for PBXNativeTarget "HermezTesterMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19203AC260D1F9C00A2CFE4 /* Debug */,
+				B19203AD260D1F9C00A2CFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B197ECE52602C87600809C8F /* Build configuration list for PBXProject "hermez" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -583,6 +1774,51 @@
 			buildConfigurations = (
 				B197ED032602C87700809C8F /* Debug */,
 				B197ED042602C87700809C8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1E66A1B260965C20032F0B9 /* Build configuration list for PBXNativeTarget "HermezTesterDelegate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E66A1C260965C20032F0B9 /* Debug */,
+				B1E66A1D260965C20032F0B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1E66A36260965EC0032F0B9 /* Build configuration list for PBXNativeTarget "HermezTesterRx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E66A37260965EC0032F0B9 /* Debug */,
+				B1E66A38260965EC0032F0B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1E66A52260966050032F0B9 /* Build configuration list for PBXNativeTarget "HermezTesterCombine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E66A53260966050032F0B9 /* Debug */,
+				B1E66A54260966050032F0B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1E66C10260A5B730032F0B9 /* Build configuration list for PBXNativeTarget "hermez_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E66C11260A5B730032F0B9 /* Debug */,
+				B1E66C12260A5B730032F0B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1E66C13260A5B730032F0B9 /* Build configuration list for PBXNativeTarget "hermez_macTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E66C14260A5B730032F0B9 /* Debug */,
+				B1E66C15260A5B730032F0B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
