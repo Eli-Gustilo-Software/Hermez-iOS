@@ -1,6 +1,8 @@
 //
-//  ZeroConfigManager.swift
-//  zeroconfig_test
+//  HermezService.swift
+//
+//  MIT license see,
+//  https://github.com/Eli-Gustilo-Software/Hermez-iOS/blob/development/LICENSE
 //
 //  Created by Nicholas Gustilo on 2/26/21.
 //
