@@ -72,7 +72,7 @@ func print(_ items: Any...) {
 public class Hermez: NSObject {
     public static let shared = Hermez()
     public var device: HermezDevice?
-    
+
     private var serviceName: String = "unknown"
     private var deviceName: String?
     private var delegates: [HermezDataProtocol] = []

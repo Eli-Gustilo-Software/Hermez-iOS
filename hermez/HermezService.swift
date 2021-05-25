@@ -10,6 +10,11 @@
 import Foundation
 import CocoaAsyncSocket
 
+enum PingTypes: String {
+    case PING = "PING"
+    case PING_CHECK = "PING CHECK"
+}
+
 protocol HermezServiceDataAvailable {
     func messageReceived(message: HermezMessage)
     func serviceStarted(serviceType: String, serviceName: String)
@@ -28,13 +33,15 @@ class HermezService: NSObject {
     private var dataDelegate: HermezServiceDataAvailable?
     private let ZC_DOMAIN = "local."
     private let ZC_PORT : UInt16 = 0// random
+    private var device: HermezDevice? = nil
     
     func publishService(serviceType: String, name: String) -> Bool {
         hostSocket = GCDAsyncSocket(delegate: self, delegateQueue: .main)
         if let _ = try? hostSocket.accept(onPort: ZC_PORT) {
-            self.service = NetService(domain: "local.", type: serviceType, name: name, port: Int32(self.hostSocket.localPort))
+            self.service = NetService(domain: ZC_DOMAIN, type: serviceType, name: name, port: Int32(self.hostSocket.localPort))
             self.service.delegate = self
             self.service.publish()
+            self.device = HermezDevice(name: name, jsonData: nil)
             return true
         } else {
             print("Unable to create socket.")
@@ -105,7 +112,21 @@ extension HermezService: GCDAsyncSocketDelegate {
         print("DATA X Read HOST :", str, " aTag: \(tag), connected port : \(sock.connectedPort)")
         do {
             let message = try JSONDecoder().decode(HermezMessage.self, from: data)
-            self.dataDelegate?.messageReceived(message: message)
+            if(message.message != PingTypes.PING.rawValue) {
+                if(message.message != PingTypes.PING_CHECK.rawValue) {
+                    self.dataDelegate?.messageReceived(message: message)
+                }
+                let pingMessage = HermezMessage(message: PingTypes.PING.rawValue,
+                                                jsonData: nil,
+                                                messageID: message.messageID,
+                                                receivingDevice: message.sendingDevice,
+                                                sendingDevice: message.receivingDevice)
+                if let messageAsJsonData = try? JSONEncoder().encode(pingMessage) {
+                    let messageAsJsonString = String(data: messageAsJsonData, encoding: .utf8)!
+                    let data = Data(messageAsJsonString.utf8) + GCDAsyncSocket.crlfData()
+                    sock.write(data, withTimeout: -1.0, tag: 3)
+                }
+            }
         } catch {
             // TODO: reply with error could not parse
             //sendValue(str: "From ZerConfigService Test Send\r\n")

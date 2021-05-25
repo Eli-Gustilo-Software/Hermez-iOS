@@ -60,7 +60,9 @@ class HermezBrowser: NSObject {
             if let currentService = findZCBrowserServiceByDevice(device: currentMessage.receivingDevice ) {
                 if let messageAsJsonData = try? JSONEncoder().encode(currentMessage) {
                     let messageAsJsonString = String(data: messageAsJsonData, encoding: .utf8)!
-                    sendValue(str: messageAsJsonString, zcBrowserService: currentService)
+                    DispatchQueue.global(qos: .background).sync {
+                        sendValue(str: messageAsJsonString, zcBrowserService: currentService)
+                    }
                 } else {
                     print("Unable to connect to address.")
                 }                
