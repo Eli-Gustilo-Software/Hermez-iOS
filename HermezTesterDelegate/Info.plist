@@ -23,9 +23,10 @@
 	<key>NSBonjourServices</key>
 	<array>
 		<string>_blah._tcp</string>
+		<string>_bag_of_holding._tcp</string>
 	</array>
 	<key>NSLocalNetworkUsageDescription</key>
-	<string>ZeroConfig searching</string>
+	<string>Hermez searching</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

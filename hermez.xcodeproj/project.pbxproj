@@ -301,6 +301,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B17940B5262BADEC00744690 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				0554986096C7D86F76DFA6E5 /* Pods_HermezTesterMac2.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		B192039C260D1F9A00A2CFE4 /* HermezTesterMac */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +350,7 @@
 				B197ECEC2602C87600809C8F /* Products */,
 				B4DD4D6E6DF5C7F0292C4945 /* Pods */,
 				B5A3169DC53640423F3E63F9 /* Frameworks */,
+				B17940B5262BADEC00744690 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -722,8 +731,8 @@
 			projectRoot = "";
 			targets = (
 				B197ECEA2602C87600809C8F /* hermez */,
-				B197ECF32602C87600809C8F /* hermezTests */,
 				B1E66BF8260A5B720032F0B9 /* hermez_mac */,
+				B197ECF32602C87600809C8F /* hermezTests */,
 				B1E66C00260A5B730032F0B9 /* hermez_macTests */,
 				B1E66A09260965C00032F0B9 /* HermezTesterDelegate */,
 				B1E66A24260965EB0032F0B9 /* HermezTesterRx */,
