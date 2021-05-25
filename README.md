@@ -7,7 +7,10 @@ Hermez is an application communications library that allows iOS, Android and Mac
 - If you need the Android version click here. <https://github.com/Eli-Gustilo-Software/Hermez>
 
 **Install on iOS/Mac**
-Download code base and build the "hermez" or the "hermez_mac" framework project and then add the framework into your project.
+
+Download code base and build the "hermez" or the "hermez_mac" framework target and then add the framework into your project.
+
+<img src="/hermez_ios_targets.png" alt="hermez targets" width="400"/>
 
 **How To Use on iOS/Mac**
 
